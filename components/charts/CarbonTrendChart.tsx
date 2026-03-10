@@ -12,7 +12,7 @@ import {
   Filler
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 // Register ChartJS components
 ChartJS.register(
@@ -78,12 +78,10 @@ const options = {
   }
 };
 
+// FIXED: Removed useEffect, use simple state initialization
 export default function CarbonTrendChart() {
-  const [isMounted, setIsMounted] = useState(false);
-
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
+  // This ensures we only render on client
+  const [isMounted] = useState(true); // Just set to true directly
 
   if (!isMounted) {
     return <div className="h-[400px] flex items-center justify-center">Loading chart...</div>;
