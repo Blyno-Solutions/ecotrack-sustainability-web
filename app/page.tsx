@@ -1,5 +1,7 @@
 'use client';
 
+
+import React from 'react'; 
 import Badge from '@/components/ui/Badge';
 import Card from '@/components/ui/card';
 import InteractiveCard from '@/components/ui/InteractiveCard';
@@ -37,7 +39,7 @@ export default function Home() {
           <Card>
             <h3 className="font-medium text-black dark:text-white">Carbon Footprint</h3>
             <p className="text-2xl font-bold text-green-600 dark:text-green-400">2.4 kg</p>
-            <p className="text-sm text-gray-600 dark:text-gray-400">Today's emissions</p>
+          <p className="text-sm text-gray-600 dark:text-gray-400">Today&apos;s emissions</p>
           </Card>
           
           <Card padding="lg">
