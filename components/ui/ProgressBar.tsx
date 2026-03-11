@@ -3,31 +3,31 @@ interface ProgressBarProps {
   max?: number;
   label?: string;
   showValue?: boolean;
-  size?: 'sm' | 'md' | 'lg';
-  color?: 'green' | 'blue' | 'yellow' | 'red';
+  size?: "sm" | "md" | "lg";
+  color?: "green" | "blue" | "yellow" | "red";
 }
 
-export default function ProgressBar({ 
-  value, 
-  max = 100, 
-  label, 
+export default function ProgressBar({
+  value,
+  max = 100,
+  label,
   showValue = true,
-  size = 'md',
-  color = 'green'
+  size = "md",
+  color = "green",
 }: ProgressBarProps) {
   const percentage = Math.min(100, Math.max(0, (value / max) * 100));
-  
+
   const heightClasses = {
-    sm: 'h-1.5',
-    md: 'h-2.5',
-    lg: 'h-4'
+    sm: "h-1.5",
+    md: "h-2.5",
+    lg: "h-4",
   };
 
   const colorClasses = {
-    green: 'bg-green-500 dark:bg-green-400',
-    blue: 'bg-blue-500 dark:bg-blue-400',
-    yellow: 'bg-yellow-500 dark:bg-yellow-400',
-    red: 'bg-red-500 dark:bg-red-400'
+    green: "bg-green-500 dark:bg-green-400",
+    blue: "bg-blue-500 dark:bg-blue-400",
+    yellow: "bg-yellow-500 dark:bg-yellow-400",
+    red: "bg-red-500 dark:bg-red-400",
   };
 
   return (
@@ -46,8 +46,8 @@ export default function ProgressBar({
           )}
         </div>
       )}
-      
-      <div 
+
+      <div
         className={`
           w-full bg-gray-200 rounded-full 
           dark:bg-gray-700 
@@ -57,9 +57,9 @@ export default function ProgressBar({
         aria-valuenow={percentage}
         aria-valuemin={0}
         aria-valuemax={100}
-        aria-label={label || 'Progress'}
+        aria-label={label || "Progress"}
       >
-        <div 
+        <div
           className={`
             ${colorClasses[color]} 
             rounded-full h-full 

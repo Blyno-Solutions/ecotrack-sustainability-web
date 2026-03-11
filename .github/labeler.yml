@@ -1,11 +1,11 @@
 feature:
-  - head-branch: ['feature/**']
+  - head-branch: ["feature/**"]
 
 bug:
-  - head-branch: ['bugfix/**']
+  - head-branch: ["bugfix/**"]
 
 docs:
-  - head-branch: ['docs/**']
+  - head-branch: ["docs/**"]
 
 chore:
-  - head-branch: ['chore/**']
+  - head-branch: ["chore/**"]
