@@ -1,14 +1,16 @@
-'use client';
+"use client";
 
-import { ReactNode } from 'react';
+import { ReactNode } from "react";
 
 interface ResponsiveChartWrapperProps {
   children: ReactNode;
   title?: string;
 }
 
-
-export default function ResponsiveChartWrapper({ children, title }: ResponsiveChartWrapperProps) {
+export default function ResponsiveChartWrapper({
+  children,
+  title,
+}: ResponsiveChartWrapperProps) {
   return (
     <div className="w-full">
       {title && (
@@ -17,9 +19,7 @@ export default function ResponsiveChartWrapper({ children, title }: ResponsiveCh
         </h3>
       )}
       <div className="w-full overflow-x-auto">
-        <div className="min-w-[300px]">
-          {children}
-        </div>
+        <div className="min-w-[300px]">{children}</div>
       </div>
     </div>
   );
