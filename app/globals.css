@@ -1,8 +1,24 @@
 @import "tailwindcss";
 
 :root {
+  /* Default Colors */
   --background: #ffffff;
   --foreground: #171717;
+
+  /* Green Score Colors */
+  --green-score-primary: #22c55e;
+  --green-score-secondary: #16a34a;
+  --green-score-light: #dcfce7;
+  --green-score-dark: #14532d;
+
+  /* Background */
+  --bg-primary: #f0fdf4;
+
+  /* Text */
+  --text-primary: #14532d;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
 }
 
 @theme inline {
