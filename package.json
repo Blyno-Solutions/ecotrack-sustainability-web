@@ -10,8 +10,7 @@
     "generate": "plop"
   },
   "dependencies": {
-    "@hookform/resolvers": "^5.2.2",
-    "next": "16.1.6",
+    "next": "16.1.7",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "react-hook-form": "^7.72.0",
