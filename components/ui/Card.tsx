@@ -4,7 +4,6 @@ interface CardProps {
   padding?: 'none' | 'sm' | 'md' | 'lg';
 }
 
-// Make sure it's a default export
 export default function Card({ 
   children, 
   className = '', 
@@ -19,12 +18,7 @@ export default function Card({
 
   return (
     <div 
-      className={`
-        bg-white dark:bg-gray-800 
-        rounded-lg shadow-md 
-        ${paddingClasses[padding]} 
-        ${className}
-      `}
+      className={`bg-white dark:bg-gray-800 rounded-lg shadow-md ${paddingClasses[padding]} ${className}`}
       role="article"
     >
       {children}
