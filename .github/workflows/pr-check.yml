@@ -2,11 +2,11 @@ name: Web Internship Lab CI
 
 on:
   pull_request:
-    branches: [ main ]
+    branches: [main]
   push:
-    branches: [ main ]
+    branches: [main]
   merge_group:
-    branches: [ main ]
+    branches: [main]
 
 concurrency:
   group: web-ci-${{ github.ref }}
@@ -21,7 +21,6 @@ env:
   NODE_VERSION: 20
 
 jobs:
-
   # 🔎 Branch Name Validation
   branch-name:
     name: 🏷️ Validate Branch Name
